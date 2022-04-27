@@ -9,6 +9,6 @@ name: CI
 
 jobs:
   docker-lint:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerLint.yml@feat/docker
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerLint.yml@main
   docker-build:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@feat/docker
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@main
