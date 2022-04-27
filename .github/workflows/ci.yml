@@ -8,5 +8,7 @@ name: CI
       - main
 
 jobs:
-  docker-workflow:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/docker-workflow.yml@feat/docker
+  docker-lint:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerLint.yml@feat/docker
+  docker-build:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@feat/docker
