@@ -11,6 +11,6 @@ jobs:
   docker-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerLint.yml@feat/shareVars
     with:
-      dockerfilePath: 'docker/Dockerfile'
+      dockerfilePath: docker/Dockerfile
   docker-build:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@main
