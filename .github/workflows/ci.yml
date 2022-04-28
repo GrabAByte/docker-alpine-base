@@ -10,10 +10,8 @@ jobs:
   gather-metadata:
     uses: GrabAByte/github-devops-workflows/.github/workflows/writeMetadata.yml@feat/shareVars
     with:
-      inputFile: 'metadata.json'
-      inputPath: .
-      outputFile: 'metadata.sh'
-      outputPath: 'metadata'
+      metadataFile: 'metadata.json'
+      metadataPath: .
   docker-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerLint.yml@feat/shareVars
     with:
@@ -22,6 +20,4 @@ jobs:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@feat/shareVars
     with:
       dockerfilePath: 'docker/Dockerfile'
-      outputFile: 'metadata.sh'
-      outputPath: 'metadata'
     needs: [gather-metadata, docker-lint]
