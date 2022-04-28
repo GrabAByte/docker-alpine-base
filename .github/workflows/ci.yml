@@ -22,4 +22,6 @@ jobs:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@main
     with:
       dockerfilePath: 'docker/Dockerfile'
-    needs: docker-lint
+      outputFile: 'metadata.sh'
+      outputPath: 'metadata'
+    needs: [gather-metadata, docker-lint]
