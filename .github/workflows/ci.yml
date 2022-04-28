@@ -7,6 +7,13 @@ name: CI
       - main
 
 jobs:
+  gather-metadata:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/writeMetadata.yml@feat/shareVars
+    with:
+      inputFile: 'metadata.json'
+      inputPath: .
+      outputFile: 'metadata.sh'
+      outputPath: 'metadata'
   docker-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerLint.yml@feat/shareVars
     with:
