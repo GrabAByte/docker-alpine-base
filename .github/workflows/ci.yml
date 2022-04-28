@@ -10,5 +10,7 @@ name: CI
 jobs:
   docker-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerLint.yml@feat/shareVars
+    with:
+      dockerfilePath: 'docker/Dockerfile'
   docker-build:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@main
