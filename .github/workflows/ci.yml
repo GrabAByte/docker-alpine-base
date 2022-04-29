@@ -18,7 +18,7 @@ jobs:
       dockerfilePath: 'docker/Dockerfile'
     needs: gather-metadata
   docker-build:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@main
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@feat/changelog
     with:
       dockerfilePath: 'docker/Dockerfile'
     secrets:
