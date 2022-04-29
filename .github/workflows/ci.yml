@@ -32,4 +32,4 @@ jobs:
       gitEmail: 'grababyte@github.com'
       metadataFile: 'metadata.json'
       metadataPath: .
-    needs: docker-build
+    needs: docker-build-publish
