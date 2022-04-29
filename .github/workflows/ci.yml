@@ -26,7 +26,7 @@ jobs:
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
     needs: docker-lint
   update-version:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/updateVersion.yml@main
+    uses: GrabAByte/github-devops-workflows/.github/workflows/updateVersion.yml@fix/versioning
     with:
       gitUsername: 'grababyte'
       gitEmail: 'grababyte@github.com'
