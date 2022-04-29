@@ -17,7 +17,7 @@ jobs:
     with:
       dockerfilePath: 'docker/Dockerfile'
   docker-build:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@main
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@feat/dockerBuild
     with:
       dockerfilePath: 'docker/Dockerfile'
     secrets:
