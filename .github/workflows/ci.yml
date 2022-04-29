@@ -28,6 +28,8 @@ jobs:
   update-version:
     uses: GrabAByte/github-devops-workflows/.github/workflows/updateVersion.yml@feat/changelog
     with:
+      gitUser: 'grababyte'
+      gitEmail: 'grababyte@github.com'
       metadataFile: 'metadata.json'
       metadataPath: .
     needs: docker-build
