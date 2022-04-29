@@ -20,4 +20,7 @@ jobs:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@main
     with:
       dockerfilePath: 'docker/Dockerfile'
+    secrets:
+      username: ${{ secrets.DOCKERHUB_USERNAME }}
+      token: ${{ secrets.DOCKERHUB_TOKEN }}
     needs: [gather-metadata, docker-lint]
