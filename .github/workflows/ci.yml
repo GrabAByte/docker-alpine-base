@@ -30,3 +30,4 @@ jobs:
     with:
       metadataFile: 'metadata.json'
       metadataPath: .
+    needs: docker-build
