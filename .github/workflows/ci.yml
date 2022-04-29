@@ -8,7 +8,7 @@ name: CI
 
 jobs:
   gather-metadata:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/writeMetadata.yml@feat/versionBump
+    uses: GrabAByte/github-devops-workflows/.github/workflows/writeMetadata.yml@main
     with:
       metadataFile: 'metadata.json'
       metadataPath: .
@@ -18,7 +18,7 @@ jobs:
       dockerfilePath: 'docker/Dockerfile'
     needs: gather-metadata
   docker-build:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@feat/main
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@main
     with:
       dockerfilePath: 'docker/Dockerfile'
     secrets:
