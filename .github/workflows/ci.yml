@@ -17,7 +17,7 @@ jobs:
     with:
       dockerfilePath: 'docker/Dockerfile'
     needs: get-version
-  docker-build:
+  docker-build-publish:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@main
     with:
       dockerfilePath: 'docker/Dockerfile'
@@ -32,4 +32,4 @@ jobs:
       gitEmail: 'grababyte@github.com'
       metadataFile: 'metadata.json'
       metadataPath: .
-    needs: docker-build
+    needs: docker-build-publish
