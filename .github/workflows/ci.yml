@@ -7,7 +7,7 @@ name: CI
       - main
 
 jobs:
-  gather-metadata:
+  get-version:
     uses: GrabAByte/github-devops-workflows/.github/workflows/getVersion.yml@feat/changelog
     with:
       metadataFile: 'metadata.json'
