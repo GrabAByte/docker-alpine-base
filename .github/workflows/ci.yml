@@ -8,7 +8,7 @@ name: CI
 
 jobs:
   gather-metadata:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/writeMetadata.yml@main
+    uses: GrabAByte/github-devops-workflows/.github/workflows/writeMetadata.yml@feat/versionBump
     with:
       metadataFile: 'metadata.json'
       metadataPath: .
