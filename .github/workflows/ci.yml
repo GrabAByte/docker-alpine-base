@@ -24,6 +24,7 @@ jobs:
     secrets:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
     needs: get-version
   docker-build-publish:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildPublish.yml@0.0.3
