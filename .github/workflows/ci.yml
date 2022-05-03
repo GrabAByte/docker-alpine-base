@@ -8,7 +8,7 @@ name: CI
 
 jobs:
   get-version:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/getVersion.yml@main
+    uses: GrabAByte/github-devops-workflows/.github/workflows/getVersion.yml@0.0.3
     with:
       metadataFile: 'metadata.json'
       metadataPath: .
@@ -18,7 +18,7 @@ jobs:
       dockerfilePath: 'docker/Dockerfile'
     needs: get-version
   docker-build-publish:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuild.yml@main
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildPublish.yml@main
     with:
       dockerfilePath: 'docker/Dockerfile'
     secrets:
