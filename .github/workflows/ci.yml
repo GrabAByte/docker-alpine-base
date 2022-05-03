@@ -17,6 +17,14 @@ jobs:
     with:
       dockerfilePath: 'docker/Dockerfile'
     needs: get-version
+  docker-scan:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerScan.yml@feat/dockerScan
+    with:
+      dockerfilePath: 'docker/Dockerfile'
+    secrets:
+      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+    needs: get-version
   docker-build-publish:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildPublish.yml@0.0.3
     with:
@@ -24,7 +32,7 @@ jobs:
     secrets:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
-    needs: docker-lint
+    needs: [docker-lint,docker-scan]
   update-version:
     uses: GrabAByte/github-devops-workflows/.github/workflows/updateVersion.yml@0.0.3
     with:
