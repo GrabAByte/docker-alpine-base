@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.5.0] - (04-05-2022)
+feat: (271a8de) add dependabot for vulnerability scanning (#13)
+
 ## [0.4.0] - (04-05-2022)
 feat: (98dee08) Add Sonar Scan quality gate
 
