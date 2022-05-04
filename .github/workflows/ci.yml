@@ -17,6 +17,12 @@ jobs:
     with:
       dockerfilePath: 'docker/Dockerfile'
     needs: get-version
+  sonar-scan:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/sonarScan.yml@feat/sonarCloud
+    with:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    needs: get-version
   docker-scan:
     uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildScan.yml@0.1.0
     with:
