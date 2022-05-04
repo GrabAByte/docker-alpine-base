@@ -9,5 +9,6 @@ updates:
       time: "18:00"
       timezone: "Europe/London"
     target-branch: "main"
-    commit-message: "fix:"
+    commit-message:
+      prefix: "fix:"
     open-pull-requests-limit: 5
