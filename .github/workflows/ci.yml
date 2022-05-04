@@ -9,7 +9,7 @@ name: CI
 jobs:
   if: ${{ github.actor != 'dependabot[bot]' }}
   get-version:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/getVersion.yml@feat/dockerUitls
+    uses: GrabAByte/github-devops-workflows/.github/workflows/getVersion.yml@0.3.0
     with:
       metadataFile: 'metadata.json'
       metadataPath: .
