@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.6.0] - (04-05-2022)
+feat: (e5ef6e4) Add dependabot for vulnerability scanning (#14)
+
 ## [0.5.0] - (04-05-2022)
 feat: (271a8de) add dependabot for vulnerability scanning (#13)
 
