@@ -8,12 +8,12 @@ name: CI
 
 jobs:
   get-version:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/getVersion.yml@0.1.1
+    uses: GrabAByte/github-devops-workflows/.github/workflows/getVersion.yml@0.2.0
     with:
       metadataFile: 'metadata.json'
       metadataPath: .
   docker-lint:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerLint.yml@0.1.1
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerLint.yml@0.2.0
     with:
       dockerfilePath: 'docker/Dockerfile'
     needs: get-version
@@ -24,7 +24,7 @@ jobs:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     needs: get-version
   docker-scan:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildScan.yml@0.1.1
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildScan.yml@0.2.0
     with:
       dockerfilePath: 'docker/Dockerfile'
     secrets:
@@ -33,7 +33,7 @@ jobs:
       SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
     needs: get-version
   docker-build-publish:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildPublish.yml@0.1.1
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildPublish.yml@0.2.0
     with:
       dockerfilePath: 'docker/Dockerfile'
     secrets:
@@ -41,7 +41,7 @@ jobs:
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
     needs: [docker-lint,docker-scan]
   update-version:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/updateVersion.yml@0.1.1
+    uses: GrabAByte/github-devops-workflows/.github/workflows/updateVersion.yml@0.2.0
     with:
       gitUsername: 'grababyte'
       gitEmail: 'grababyte@github.com'
