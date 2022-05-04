@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.7.0] - (04-05-2022)
+feat: (1839e3f) Add docker utilities (#19)
+
 ## [0.6.2] - (04-05-2022)
 fix: (09527c0) Correct comment in dependabot :laughing face: (#16)
 
