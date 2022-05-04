@@ -6,8 +6,9 @@ updates:
     schedule:
       day: "wednesday"
       interval: "weekly"
-      time: "14:45"
+      time: "18:10"
       timezone: "Europe/London"
     target-branch: "main"
-    commit-message: "fix:"
+    commit-message:
+      prefix: "fix:"
     open-pull-requests-limit: 5
