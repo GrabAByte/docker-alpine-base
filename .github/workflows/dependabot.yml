@@ -6,7 +6,7 @@ updates:
     schedule:
       day: "wednesday"
       interval: "weekly"
-      time: "14:30"
+      time: "14:45"
       timezone: "Europe/London"
     target-branch: "main"
     commit-message: "fix:"
