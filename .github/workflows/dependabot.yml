@@ -1,0 +1,13 @@
+---
+version: 2
+updates:
+  - package-ecosystem: "docker"
+    directory: "docker"
+    schedule:
+      day: "wednesday"
+      interval: "weekly"
+      time: "14:45"
+      timezone: "Europe/London"
+    target-branch: "main"
+    commit-message: "fix:"
+    open-pull-requests-limit: 5
