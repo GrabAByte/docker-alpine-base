@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.6.1] - (04-05-2022)
+fix: (122007e) Correct comment in dependabot :laughing face:
+
 ## [0.6.0] - (04-05-2022)
 feat: (e5ef6e4) Add dependabot for vulnerability scanning (#14)
 
