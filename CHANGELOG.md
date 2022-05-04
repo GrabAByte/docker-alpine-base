@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.6.2] - (04-05-2022)
+fix: (09527c0) Correct comment in dependabot :laughing face: (#16)
+
 ## [0.6.1] - (04-05-2022)
 fix: (122007e) Correct comment in dependabot :laughing face:
 
