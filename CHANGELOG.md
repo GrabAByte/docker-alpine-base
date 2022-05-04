@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.7.1] - (04-05-2022)
+fix: (7208c91) Stage dependencies (#20)
+
 ## [0.7.0] - (04-05-2022)
 feat: (1839e3f) Add docker utilities (#19)
 
