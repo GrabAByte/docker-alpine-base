@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.4.0] - (04-05-2022)
+feat: (98dee08) Add Sonar Scan quality gate
+
 ## [0.3.0] - (03-05-2022)
 feature: (3a26e14) Add docker scanning capability (#10)
 
