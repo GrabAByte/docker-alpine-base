@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.7.3] - (11-05-2022)
+fix: (73c9abb) Add tzdata dependency for java based apps
+
 ## [0.7.2] - (11-05-2022)
 fix: (dfa778e) Add bash dependency for GO image (#21)
 
