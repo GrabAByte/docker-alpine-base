@@ -18,6 +18,7 @@ RUN \
     sshpass==1.09-r0 \
     sudo==1.9.7_p1-r1 \
     tar==1.34-r0 \
+    tzdata==2022a-r0 \
     unzip==6.0-r9 \
     zip==3.0-r9 && \
   rm -rf /var/cache/apk/*
