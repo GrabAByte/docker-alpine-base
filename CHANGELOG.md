@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.7.4] - (30-05-2022)
+fix: (cf93fe8) Update to latest dependencies in Dockerfile (#23)
+
 ## [0.7.3] - (11-05-2022)
 fix: (73c9abb) Add tzdata dependency for java based apps
 
