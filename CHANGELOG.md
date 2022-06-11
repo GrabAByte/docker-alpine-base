@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.7.5] - (11-06-2022)
+fix: (5373713) Bump gitlab CI working tag to v0.5.3
+
 ## [0.7.4] - (30-05-2022)
 fix: (cf93fe8) Update to latest dependencies in Dockerfile (#23)
 
