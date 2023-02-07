@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.8.0] - (07-02-2023)
+feat: (417746c) Update base image and dependencies (#29)
+
 ## [0.7.5] - (11-06-2022)
 fix: (5373713) Bump gitlab CI working tag to v0.5.3
 
