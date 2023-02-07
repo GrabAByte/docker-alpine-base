@@ -21,4 +21,8 @@ RUN \
     tzdata==2022f-r1 \
     unzip==6.0-r13 \
     zip==3.0-r10 && \
-  rm -rf /var/cache/apk/*
+  rm -rf /var/cache/apk/* && \
+  addgroup -S alpine && \
+  adduser -S alpine -G alpine
+
+USER alpine
