@@ -2,6 +2,8 @@ FROM docker.io/alpine:3.17.2
 
 LABEL devops.grababyte.image.authors="GrabAByte"
 
+ARG USER=alpine
+
 RUN \
   apk add --no-cache \
     bash==5.2.15-r0 \
@@ -28,7 +30,7 @@ RUN \
   rm -rf /var/cache/apk/* && \
   python3 -m ensurepip && \
   pip3 install --no-cache --upgrade pip setuptools && \
-  addgroup -S alpine && \
-  adduser -S alpine -G alpine
+  addgroup -S "${USER}" && \
+  adduser -S "${USER}" -G "${USER}"
 
 USER alpine
