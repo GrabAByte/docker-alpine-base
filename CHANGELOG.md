@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.9.1] - (21-02-2023)
+fix: (8bd6e55) Add user to sudoers (#32)
+
 ## [0.9.0] - (21-02-2023)
 feat: (23ef012) Add package managers (#31)
 
