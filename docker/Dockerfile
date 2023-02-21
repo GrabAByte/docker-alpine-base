@@ -33,6 +33,7 @@ RUN \
     pip==23.0.1 \
     setuptools==67.3.3 && \
   addgroup -S "${USER}" && \
-  adduser -S "${USER}" -G "${USER}"
+  adduser -S "${USER}" -G "${USER}" && \
+  echo "${USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 USER alpine
