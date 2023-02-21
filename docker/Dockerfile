@@ -29,7 +29,9 @@ RUN \
     zip==3.0-r10 && \
   rm -rf /var/cache/apk/* && \
   python3 -m ensurepip && \
-  pip3 install --no-cache --upgrade pip setuptools && \
+  pip3 install --no-cache-dir --upgrade \
+    pip==23.0.1 \
+    setuptools==67.3.3 && \
   addgroup -S "${USER}" && \
   adduser -S "${USER}" -G "${USER}"
 
