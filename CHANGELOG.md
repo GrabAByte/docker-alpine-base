@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.9.0] - (21-02-2023)
+feat: (23ef012) Add package managers (#31)
+
 ## [0.8.0] - (07-02-2023)
 feat: (417746c) Update base image and dependencies (#29)
 
