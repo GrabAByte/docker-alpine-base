@@ -15,8 +15,8 @@ RUN \
     libffi-dev==3.4.4-r0 \
     make==4.3-r1 \
     musl-dev==1.2.3-r4 \
-    nodejs \
-    npm \
+    nodejs==18.14.2-r0 \
+    npm==9.1.2-r0 \
     openssl-dev==3.0.8-r0 \
     openssh==9.1_p1-r2 \
     python3==3.10.10-r0 \
@@ -29,11 +29,13 @@ RUN \
     zip==3.0-r10 && \
   rm -rf /var/cache/apk/* && \
   python3 -m ensurepip && \
-  pip3 install --no-cache-dir --upgrade \
-    pip==23.0.1 \
-    setuptools==67.3.3 && \
   addgroup -S "${USER}" && \
   adduser -S "${USER}" -G "${USER}" && \
   echo "${USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 USER "${USER}"
+
+RUN \
+    pip3 install --no-cache-dir --upgrade \
+      pip==23.0.1 \
+      setuptools==67.3.3
