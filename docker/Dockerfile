@@ -15,8 +15,8 @@ RUN \
     libffi-dev==3.4.4-r0 \
     make==4.3-r1 \
     musl-dev==1.2.3-r4 \
-    nodejs==18.14.1-r0 \
-    npm==9.1.2-r0 \
+    nodejs \
+    npm \
     openssl-dev==3.0.8-r0 \
     openssh==9.1_p1-r2 \
     python3==3.10.10-r0 \
@@ -36,4 +36,4 @@ RUN \
   adduser -S "${USER}" -G "${USER}" && \
   echo "${USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-USER alpine
+USER "${USER}"
