@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.9.2] - (24-02-2023)
+fix: (5fbf496) install pip packages as non-root user (#33)
+
 ## [0.9.1] - (21-02-2023)
 fix: (8bd6e55) Add user to sudoers (#32)
 
