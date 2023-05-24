@@ -1,32 +1,34 @@
-FROM docker.io/alpine:3.17.2
+FROM docker.io/alpine:3.18.0
 
 LABEL devops.grababyte.image.authors="GrabAByte"
+
+USER root
 
 ARG USER=alpine
 
 RUN \
   apk add --no-cache \
-    bash==5.2.15-r0 \
-    curl==7.87.0-r2 \
-    g++==12.2.1_git20220924-r4 \
-    gcc==12.2.1_git20220924-r4 \
-    git==2.38.4-r0 \
-    jq==1.6-r2 \
-    libffi-dev==3.4.4-r0 \
-    make==4.3-r1 \
-    musl-dev==1.2.3-r4 \
-    nodejs==18.14.2-r0 \
-    npm==9.1.2-r0 \
-    openssl-dev==3.0.8-r0 \
-    openssh==9.1_p1-r2 \
-    python3==3.10.10-r0 \
-    ruby==3.1.3-r0 \
-    sshpass==1.09-r1 \
-    sudo==1.9.12_p2-r0 \
-    tar==1.34-r2 \
-    tzdata==2022f-r1 \
-    unzip==6.0-r13 \
-    zip==3.0-r10 && \
+    bash==5.2.15-r3 \
+    curl==8.1.1-r0 \
+    g++==12.2.1_git20220924-r10 \
+    gcc==12.2.1_git20220924-r10 \
+    git==2.40.1-r0 \
+    jq==1.6-r3 \
+    libffi-dev==3.4.4-r2 \
+    make==4.4.1-r1 \
+    musl-dev==1.2.4-r0 \
+    nodejs==18.16.0-r1 \
+    npm==9.6.6-r0 \
+    openssl-dev==3.1.0-r4 \
+    openssh==9.3_p1-r3 \
+    python3==3.11.3-r11 \
+    ruby==3.2.2-r0 \
+    sshpass==1.10-r0 \
+    sudo==1.9.13_p3-r2 \
+    tar==1.34-r3 \
+    tzdata==2023c-r1 \
+    unzip==6.0-r14 \
+    zip==3.0-r12 && \
   rm -rf /var/cache/apk/* && \
   python3 -m ensurepip && \
   addgroup -S "${USER}" && \
