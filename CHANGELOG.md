@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.10.0] - (24-05-2023)
+feat: (19fc866) bump base OS to 3.18.0 (#36)
+
 ## [0.9.2] - (24-02-2023)
 fix: (5fbf496) install pip packages as non-root user (#33)
 
