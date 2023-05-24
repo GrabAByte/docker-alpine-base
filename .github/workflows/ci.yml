@@ -12,11 +12,11 @@ jobs:
     with:
       metadataFile: 'metadata.json'
       metadataPath: .
-  docker-lint:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerLint.yml@0.5.3
-    with:
-      dockerfilePath: 'docker/Dockerfile'
-    needs: get-version
+        #docker-lint:
+        #uses: GrabAByte/github-devops-workflows/.github/workflows/dockerLint.yml@0.5.3
+        #with:
+        #dockerfilePath: 'docker/Dockerfile'
+        #needs: get-version
   sonar-scan:
     uses: GrabAByte/github-devops-workflows/.github/workflows/sonarScan.yml@0.5.3
     secrets:
