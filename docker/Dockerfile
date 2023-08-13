@@ -1,4 +1,4 @@
-FROM docker.io/alpine:3.18.0
+FROM docker.io/alpine:3.18.3
 
 LABEL devops.grababyte.image.authors="GrabAByte"
 
