@@ -22,6 +22,7 @@ RUN \
     openssl-dev==3.1.4-r6 \
     openssh==9.6_p1-r0 \
     python3==3.11.9-r0 \
+    python3-pip \
     ruby==3.2.4-r0 \
     sshpass==1.10-r0 \
     sudo==1.9.15_p2-r0 \
