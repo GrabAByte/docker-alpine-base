@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.11.0] - (23-05-2024)
+feat: (288325d) Bump the base version of the alpine image to 3.19.1 (#39)
+
 ## [0.10.0] - (24-05-2023)
 feat: (19fc866) bump base OS to 3.18.0 (#36)
 
