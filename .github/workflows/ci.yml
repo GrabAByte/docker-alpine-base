@@ -24,7 +24,7 @@ jobs:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     needs: get-version
   docker-scan:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildScan.yml@0.6.4
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildScan.yml@fix/workflows
     with:
       dockerfilePath: 'docker/Dockerfile'
     secrets:
@@ -33,7 +33,7 @@ jobs:
       SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
     needs: get-version
   docker-build-publish:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildPublish.yml@0.6.4
+    uses: GrabAByte/github-devops-workflows/.github/workflows/dockerBuildPublish.yml@fix/workflows
     with:
       dockerfilePath: 'docker/Dockerfile'
     secrets:
