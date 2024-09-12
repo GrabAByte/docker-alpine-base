@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.11.1] - (12-09-2024)
+chore: (9dc2843) Update alpine release and dependency versions and add MIT license
+
 ## [0.11.0] - (23-05-2024)
 feat: (288325d) Bump the base version of the alpine image to 3.19.1 (#39)
 
