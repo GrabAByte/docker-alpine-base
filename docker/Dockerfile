@@ -9,7 +9,7 @@ ARG USER=alpine
 RUN \
   apk add --no-cache \
     bash==5.2.26-r0 \
-    curl==curl-8.10.0-r0 \
+    curl==8.10.0-r0 \
     g++==13.2.1_git20240309-r0 \
     gcc==13.2.1_git20240309-r0 \
     git==2.45.2-r0 \
