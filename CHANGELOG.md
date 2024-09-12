@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.11.2] - (12-09-2024)
+fix: (42b9996) bump workflow versions to latest release (#45)
+
 ## [0.11.1] - (12-09-2024)
 chore: (9dc2843) Update alpine release and dependency versions and add MIT license
 
