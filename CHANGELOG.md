@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.12.0] - (23-04-2025)
+feat: (5aef2d6) bump the base alpine version to 3.21.3 and uplift base packages (#49)
+
 ## [0.11.2] - (12-09-2024)
 fix: (42b9996) bump workflow versions to latest release (#45)
 
